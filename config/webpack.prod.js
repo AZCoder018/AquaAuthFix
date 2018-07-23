@@ -23,7 +23,7 @@ module.exports = merge(commonConfig, {
                   },
                   minify: {},
                   compress: {
-                      booleans: true,
+                      booleans: false,
                       //...
                   }
               }
