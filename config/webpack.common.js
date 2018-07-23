@@ -42,12 +42,12 @@ module.exports = {
         include: helpers.root('client'),
         loader: 'babel-loader'
       },
-      { test: /\.css$/, loader: "style-loader!css-loader" }
+      // { test: /\.css$/, loader: "style-loader!css-loader" }
       // SCSS files
-      // {
-      //   test: /\.css$/,
-      //   use: [ 'style-loader', 'css-loader' ]
-      // }
+      {
+        test: /\.css$/,
+        use: [ 'css-loader' ]
+      }
     ]
   },
 
