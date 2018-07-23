@@ -19,7 +19,8 @@ const cors = require('cors');
 // ================================================================================================
 
 // Set up Mongoose
-mongoose.connect(isDev ? config.db_dev : config.db);
+//mongoose.connect(isDev ? config.db_dev : config.db);
+mongoose.connect(process.env.MONGODB_URI);
 mongoose.Promise = global.Promise;
 
 const app = express();
