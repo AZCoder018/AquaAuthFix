@@ -7,7 +7,7 @@ const Header = props => (
   <div>
     <h1>Aqua-Zotic</h1>
     <h2>
-      The Most Premier Exotic Freshwater Aquarium Fish Store In Arizona!
+                    Arizona's Premier Exotic Fish Store!
     </h2>
     
     </div>
