@@ -28,10 +28,10 @@ import { SecureRoute, ImplicitCallback } from '@okta/okta-react';
 render((
   <Router>
                 <Security
-client_Id = '0oafq1bebpKt2MC6A0h7'
+client_Id = '0oafsaxibrdKJj4Ib0h7'
  issuer =  'https://dev-121546.oktapreview.com/oauth2/default'
 
-          redirect_uri= 'http://localhost:8080/home'
+          redirect_uri= 'https://stormy-ridge-74315.herokuapp.com/implicit/callback'
         >
     <div>
     <App>

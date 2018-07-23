@@ -11,7 +11,7 @@ export default withAuth(class Login extends React.Component{
 var config = {
   baseUrl: 'https://dev-121546.oktapreview.com',
   clientId: '0oafsaxibrdKJj4Ib0h7',
-  redirectUri: 'https://stormy-ridge-74315.herokuapp.com/',
+  redirectUri: 'https://stormy-ridge-74315.herokuapp.com/implicit/callback',
   authParams: {
   // issuer: 'https://dev-121546.oktapreview.com/oauth2/default',
    scopes: ['openid', 'email', 'profile', 'address', 'phone'],
