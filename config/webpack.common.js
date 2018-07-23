@@ -34,9 +34,7 @@ module.exports = {
   },
 
   module: {
-    loaders: [
-      { test: /\.css$/, loader: "style-loader!css-loader" }
-     ],
+
     rules: [
       // JS files
       {
@@ -44,6 +42,7 @@ module.exports = {
         include: helpers.root('client'),
         loader: 'babel-loader'
       },
+      { test: /\.css$/, loader: "style-loader!css-loader" }
       // SCSS files
       // {
       //   test: /\.css$/,
