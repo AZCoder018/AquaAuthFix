@@ -29,7 +29,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.json', '.css', '.scss', '.html'],
     alias: {
-     //  'app': 'client/app'
+       'app': 'client/app'
     }
   },
 
@@ -46,7 +46,7 @@ module.exports = {
       // SCSS files
       {
         test: /\.css$/,
-        use: [ 'css-loader' ]
+        use: [ 'style-loader', 'css-loader' ]
       }
     ]
   },
