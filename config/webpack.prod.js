@@ -12,7 +12,15 @@ module.exports = merge(commonConfig, {
     filename: 'js/[name].[hash].js',
     chunkFilename: '[id].[hash].chunk.js'
   },
-
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      },
+      
+    ]
+  },
   optimization: {
     minimizer: [
         //https://github.com/mishoo/UglifyJS2/tree/harmony
